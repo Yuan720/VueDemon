@@ -14,6 +14,11 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
+Route::post('login','login/login');
+Route::get('item/query', 'item/queryByKeyWords');
+Route::post('item/add', 'item/addItem');
+Route::get('item/remove', 'item/removeItem');
+
 
 return [
 
